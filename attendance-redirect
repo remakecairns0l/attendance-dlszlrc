@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Submitting...</title>
+</head>
+
+<body>
+
+<form id="autoForm"
+action="https://docs.google.com/forms/d/e/FORM_ID/formResponse"
+method="POST">
+
+  <!-- Hidden field (optional but useful for logging presses) -->
+  <input type="hidden" name="entry.123456789" value="Button Press">
+
+</form>
+
+<script>
+
+// submit form automatically
+document.getElementById("autoForm").submit();
+
+// redirect back to your site after a short delay
+setTimeout(function(){
+  window.location.href = "https://sites.google.com/view/YOUR_SITE";
+}, 300);
+
+</script>
+
+</body>
+</html>
